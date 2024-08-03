@@ -5,7 +5,10 @@ project_name = "us_visa"
 
 list_of_files = [
 
+    "notebooks/",
+    "logs/"
     f"{project_name}/__init__.py",
+
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",  
     f"{project_name}/components/data_validation.py",

@@ -9,3 +9,6 @@ git clone https://github.com/RisAhamed/ML-MLOPS.git
 ``` bash 
 pip install -r requirements.txt
 ```
+``` bash
+mongodb+srv://Riswan:Riswan@123@cluster0.nsxepuw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+```

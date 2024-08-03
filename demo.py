@@ -1,5 +1,12 @@
 from us_visa.logger import logger
+from us_visa.exception import CustomException 
 
-logger.info("welcome to the logs")
+# Example usage:
 
-logger.warning("this is a common message")
+# try:
+#     a = 1.32/dds
+#     # Your code here
+#     raise TypeError("int object is not iterable")
+# except Exception as e:
+#     CustomException(e)
+

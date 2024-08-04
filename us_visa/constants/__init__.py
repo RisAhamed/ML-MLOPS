@@ -1,13 +1,11 @@
 import os
 from datetime import date
 
-
-
 DATABASE_NAME = "US_VISA"
 
 COLLECTION_NAME = "VISA_DATA"
 
-MONGODB_URL_KEY ="MONGODB_URL"
+MONGODB_URL_KEY =os.getenv("MONGODB_URL")
 
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"

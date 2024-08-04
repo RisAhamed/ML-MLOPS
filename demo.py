@@ -1,12 +1,12 @@
 from us_visa.logger import logger
 from us_visa.exception import CustomException 
+from us_visa.pipline.training_pipeline import TrainingPipeline
+from us_visa.constants import DATABASE_NAME,MONGODB_URL_KEY
 
-# Example usage:
+print(MONGODB_URL_KEY)
+print(type(MONGODB_URL_KEY))
 
-try:
-    a = 1.32/00
-    # Your code here
-    raise TypeError("int object is not iterable")
-except Exception as e:
-    CustomException(e)
+obj = TrainingPipeline()
+obj.run_pipeline()
+
 

@@ -1,4 +1,4 @@
-import os
+import os,sys
 from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 from us_visa.entity.config_entity import DataIngestionConfig
@@ -14,7 +14,7 @@ class DataIngestion:
             self.data_ingestion_config = data_ingestion_config
 
         except Exception as e:
-            raise CustomException(e)
+            raise CustomException(e,sys)
         
     def export_data_into_feature_store(self)->DataFrame:
      
@@ -40,7 +40,7 @@ class DataIngestion:
             return dataframe
         
         except Exception as e:
-            raise CustomException(e)
+            raise CustomException(e,sys)
         
     def split_data_as_train_test(self,dataframe: DataFrame)->None:
         """
@@ -65,7 +65,7 @@ class DataIngestion:
 
 
         except Exception as e:
-            raise CustomException(e)
+            raise CustomException(e,sys)
         
 
     def initiate_data_ingestion(self)->DataIngestionArtifact:
@@ -93,6 +93,6 @@ class DataIngestion:
 
 
         except Exception as e:
-            raise CustomException(e) from e
+            raise CustomException(e,sys) 
         
     

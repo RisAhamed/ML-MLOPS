@@ -1,12 +1,12 @@
 from us_visa.logger  import logger
 from us_visa.exception import CustomException
-from us_visa.constants  import DATABASE_NAME, MONGODB_URL_KEY
-import pymongo
+from us_visa.constants  import DATABASE_NAME
+
 from us_visa.configuration.mongodb_connection import MongoDBClient
 import certifi
 import pandas as pd
 import numpy as np
-
+import sys
 class VisaData:
     def __init__(self):
         self.mongo_client = MongoDBClient(database_name=DATABASE_NAME)
@@ -38,4 +38,4 @@ class VisaData:
             logger.error(f"Error exporting {collection_name} collection as a DataFrame: {str(e)}")
 
             # Raise a custom exception
-            raise CustomException(e)
+            raise CustomException(e,sys)

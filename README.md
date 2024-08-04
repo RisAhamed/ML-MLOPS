@@ -9,6 +9,16 @@ git clone https://github.com/RisAhamed/ML-MLOPS.git
 ``` bash 
 pip install -r requirements.txt
 ```
+
 ``` bash
-mongodb+srv://Riswan:Riswan@123@cluster0.nsxepuw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+mongodb+srv://<user name> :<password>@us-visa-cluster.dffpbxg.mongodb.net/?retryWrites=true&w=majority&appName=us-visa-cluster
+
 ```
+# project work flow
+``` bash
+1. constants
+2. configuration or entity
+3. Components
+4. Pipeline
+```
+

@@ -4,9 +4,11 @@ from datetime import date
 DATABASE_NAME = "US_VISA"
 
 COLLECTION_NAME = "VISA_DATA"
-
-MONGODB_URL_KEY =os.getenv("MONGODB_URL")
-
+from dotenv import load_dotenv
+load_dotenv()
+# MONGODB_URL_KEY = 'mongodb+srv://Riswan:Riswan@us-visa-cluster.dffpbxg.mongodb.net/?retryWrites=true&w=majority&appName=us-visa-cluster'
+# # os.environ[MONGODB_URL_KEY] = MONGODB_URL_KEY
+MONGODB_URL_KEY = os.getenv("MONGODB_URL")
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
 
